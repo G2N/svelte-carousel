@@ -4,7 +4,7 @@
 
   import products from "./products.js";
 
-  let inputItemsPerPage = 5;
+  let inputItemsPerPage = 1;
   let circular = false;
   let isViewPortDependant = false;
   let startPage = 0;
