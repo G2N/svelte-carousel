@@ -145,10 +145,10 @@
 </div>
 {#if arrows}
   <div class="controls arrows">
-    {#if circular || !isFirstPage}
+    {#if pagesCount > 1 && (circular || !isFirstPage)}
       <button on:click={previous}>&larr;</button>
     {/if}
-    {#if circular || !isLastPage}
+    {#if pagesCount > 1 && (circular || !isLastPage)}
       <button on:click={next}>&rarr;</button>
     {/if}
   </div>
